@@ -1,0 +1,15 @@
+﻿Team: Anna Moy & Natalie Kalukeerthie
+
+
+For this assignment, we use the Harry Potter dataset to analyze character interactions, incorporating categorical information such as gender. Our approach involves merging two datasets — one containing character attributes (including gender, house, and job) and another representing character and character interaction networks. To accurately combine these datasets despite differences in character name formatting, we apply fuzzy matching techniques.
+After merging, we construct a network graph and calculate key centrality measures for each character node, specifically degree centrality and eigenvector centrality. We then compare these centrality metrics across the categorical group of gender and house to identify potential differences in network prominence between male and female characters. Finally, we apply statistical testing (t-tests) on the centrality measures to assess whether these differences are significant.
+This process allows us to explore how categorical attributes relate to a character’s importance and connectivity within the network.
+By comparing degree centrality across Hogwarts Houses, we could hypothesize that Gryffindor characters will have higher degree centrality than other Houses, since the main storyline follows Gryffindor students and they tend to interact with more characters overall. Higher degree centrality would indicate that Gryffindors are more socially connected within the Harry Potter universe, potentially giving them more influence in spreading information or mobilizing others during key events.
+So, a predicted outcome could be: “House affiliation is related to social influence in the network. Gryffindor characters are more likely to be central hubs.”
+
+
+Dataset 1(Github): Character Interaction Networks for the Harry Potter Series https://github.com/nikhil-ravi/harry-potter-interactions?tab=readme-ov-file
+
+
+Dataset 2 (Kaggle): Harry Potter Dataset
+https://www.kaggle.com/datasets/gulsahdemiryurek/harry-potter-dataset?resource=download&select=Characters.csv
